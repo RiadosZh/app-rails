@@ -1,0 +1,9 @@
+<h1>Hello show</h1>
+<%= notice%>
+<p>
+<label>ID: </label><%= @post.id %>
+</p>
+<p><label>title: </label><%=@post.title%></p>
+
+<p><label>body: </label><%=@post.body%></p>
+<%= link_to 'Update post',edit_post_path(@post)%>

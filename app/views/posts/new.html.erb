@@ -1,0 +1,8 @@
+<h1>Hello new</h1>
+
+<%= form_for(@post) do |f| %>
+<p>title:<%= f.text_field :title %></p>
+<p>body:<%= f.text_area  :body %></p>
+<%= f.submit %>
+    <% end %>
+    <%= link_to 'All Posts',posts_path%>

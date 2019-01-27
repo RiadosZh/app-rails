@@ -1,0 +1,6 @@
+rails g migration nomdelamigration => generation de la migration
+rails d migration nomdelamigration => destruction de la migration
+railg g model nomdumodel title content:text => c mieux avec model + attributs
+rake db:create => creation de la base
+rails db:migrate => creation de la table
+link_to 'show', post_path => prefix_path

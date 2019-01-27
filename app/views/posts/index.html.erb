@@ -1,0 +1,12 @@
+<h1>Hello index</h1>
+<%= link_to  'Create_new_post',new_post_path%>
+<% @posts.each do |post| %>
+<p>ID:<%= post.id%></p>
+<p><%= post.title%></p>
+<p><%= post.body%></p>
+<%= link_to  'Show_post',post_path(post) %>
+<%= link_to 'Update_post', edit_post_path(post)%>
+<p><%= link_to 'Delete', post,method:  :delete ,data: {confirm:"Are you sure to delete this post"} %>
+</p>
+<hr>
+<%end%>
